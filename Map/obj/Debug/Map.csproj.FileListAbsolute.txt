@@ -1,0 +1,16 @@
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\Map.exe.config
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\Map.exe
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\Map.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\GMap.NET.Core.dll
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\GMap.NET.Core.xml
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\bin\Debug\GMap.NET.WindowsForms.xml
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.csproj.AssemblyReference.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.Properties.Resources.resources
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.csproj.GenerateResource.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.csproj.CoreCompileInputs.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.csproj.CopyComplete
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.exe
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.Map.resources
+C:\Users\fedor\OneDrive\Рабочий стол\Map\Map\obj\Debug\Map.MainForm.resources
