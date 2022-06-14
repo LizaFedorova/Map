@@ -134,9 +134,29 @@ namespace Map.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap маркировка {
+            get {
+                object obj = ResourceManager.GetObject("маркировка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap металл {
             get {
                 object obj = ResourceManager.GetObject("металл", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap мусор_как_долго_разлагается {
+            get {
+                object obj = ResourceManager.GetObject("мусор-как-долго-разлагается", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
