@@ -34,13 +34,10 @@ namespace Map
             this.buttonNews = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +78,7 @@ namespace Map
             this.buttonNews.TabIndex = 7;
             this.buttonNews.Text = "Новости";
             this.buttonNews.UseVisualStyleBackColor = false;
+            this.buttonNews.Click += new System.EventHandler(this.buttonNews_Click);
             // 
             // pictureBox5
             // 
@@ -102,37 +100,27 @@ namespace Map
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Map.Properties.Resources.лист2;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 537);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(316, 316);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Map.Properties.Resources.лист;
-            this.pictureBox1.Location = new System.Drawing.Point(862, 537);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(316, 316);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Map.Properties.Resources.ee2131f3ca3be41f419c85cf2a61fea3;
-            this.pictureBox3.Location = new System.Drawing.Point(437, 541);
+            this.pictureBox3.Location = new System.Drawing.Point(437, 698);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(316, 103);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.Location = new System.Drawing.Point(437, 661);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(316, 55);
+            this.buttonExit.TabIndex = 17;
+            this.buttonExit.Text = "Выход\r\n";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // MainForm
             // 
@@ -140,8 +128,7 @@ namespace Map
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 853);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.buttonNews);
@@ -153,8 +140,6 @@ namespace Map
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -163,12 +148,11 @@ namespace Map
         #endregion
 
         private System.Windows.Forms.Button buttonMap;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button buttonInfo;
         private System.Windows.Forms.Button buttonNews;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

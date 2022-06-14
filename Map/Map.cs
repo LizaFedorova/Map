@@ -2,6 +2,7 @@
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 namespace Map
 {
@@ -11,6 +12,8 @@ namespace Map
         public Map()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(50, 50);
             GMapOverlay plasticMarkersOverlay = new GMapOverlay(gMapControl1, "marker");
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -433,6 +436,7 @@ namespace Map
         {
             this.Hide();
             MainForm fm = new MainForm();
+            fm.Location = this.Location;
             fm.Show();
         }
     }

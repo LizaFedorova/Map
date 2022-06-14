@@ -140,5 +140,11 @@
   <ItemGroup>
     <None Include="Resources\металл.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\маркировка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\мусор-как-долго-разлагается.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

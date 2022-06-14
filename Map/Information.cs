@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Map
@@ -15,6 +9,8 @@ namespace Map
         public Information()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(50, 50);
         }
 
         private void Information_Load(object sender, EventArgs e)
@@ -26,7 +22,40 @@ namespace Map
         {
             this.Hide();
             MainForm fm = new MainForm();
+            fm.Location = this.Location;
             fm.Show();
+        }
+
+        private void buttonMetall_Click(object sender, EventArgs e)
+        {
+            textBoxPlastic.Visible = false;
+            picturePlasticMarkers.Visible = false;
+            pictureTime.Visible = false;
+            textBoxMetall.Visible = true;
+        }
+
+        private void buttonPlastic_Click(object sender, EventArgs e)
+        {
+            textBoxMetall.Visible = false;
+            picturePlasticMarkers.Visible = false;
+            pictureTime.Visible = false;
+            textBoxPlastic.Visible = true;
+        }
+
+        private void buttonTime_Click(object sender, EventArgs e)
+        {
+            textBoxMetall.Visible = false;
+            textBoxPlastic.Visible = false;
+            picturePlasticMarkers.Visible = false;
+            pictureTime.Visible = true;
+        }
+
+        private void buttonPlasticMarkers_Click(object sender, EventArgs e)
+        {
+            textBoxPlastic.Visible = false;
+            textBoxMetall.Visible = false;
+            pictureTime.Visible = false;
+            picturePlasticMarkers.Visible = true;
         }
     }
 }
