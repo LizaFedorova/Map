@@ -29,6 +29,7 @@ namespace Map
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(News));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonMenu = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@ namespace Map
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -92,11 +93,11 @@ namespace Map
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.textBox1.Location = new System.Drawing.Point(12, 176);
+            this.textBox1.Location = new System.Drawing.Point(12, 212);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(367, 377);
+            this.textBox1.Size = new System.Drawing.Size(573, 377);
             this.textBox1.TabIndex = 21;
             // 
             // textBox2
@@ -117,25 +118,28 @@ namespace Map
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.textBox3.Location = new System.Drawing.Point(406, 176);
+            this.textBox3.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
+            this.textBox3.Location = new System.Drawing.Point(603, 212);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(367, 377);
+            this.textBox3.Size = new System.Drawing.Size(567, 377);
             this.textBox3.TabIndex = 23;
+            this.textBox3.Text = resources.GetString("textBox3.Text");
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.Control;
             this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox4.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.textBox4.Location = new System.Drawing.Point(800, 176);
+            this.textBox4.Location = new System.Drawing.Point(791, 666);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(367, 377);
             this.textBox4.TabIndex = 24;
+            this.textBox4.Visible = false;
             // 
             // textBox5
             // 
@@ -151,19 +155,17 @@ namespace Map
             this.textBox5.Text = "Когда и где будут находиться передвижные \r\nпункты утилизации отходов";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // button1
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Franklin Gothic Book", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.OliveDrab;
-            this.textBox6.Location = new System.Drawing.Point(800, 614);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(367, 94);
-            this.textBox6.TabIndex = 26;
-            this.textBox6.Text = "Передвижные пункты утилизации отходов. Когда и где они будут находиться?";
-            this.textBox6.Visible = false;
+            this.button1.BackColor = System.Drawing.Color.YellowGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(187, 514);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 49);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Подробнее";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // News
             // 
@@ -171,7 +173,7 @@ namespace Map
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 1055);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -181,6 +183,7 @@ namespace Map
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "News";
             this.Text = "News";
             this.Load += new System.EventHandler(this.News_Load);
@@ -201,6 +204,6 @@ namespace Map
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button1;
     }
 }

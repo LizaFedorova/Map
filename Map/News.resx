@@ -120,6 +120,16 @@
   <metadata name="buttonMenu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>    Жители города могут бесплатно сдать в передвижные пункты приема следующие виды отходов:
+  • ртутные лампы (люминесцентные и компактные энергосберегающие);
+  • ртутные термометры и другие ртутьсодержащие приборы;
+  • малогабаритные источники тока (отработанные батарейки и аккумуляторы);
+  • бытовую, компьютерную технику и оргтехнику.
+  • отработанные автомобильные аккумуляторы.
+
+    Предварительно, для Вашей безопасности, поврежденные ртутные градусники необходимо поместить в герметичную тару (контейнер, полиэтиленовый пакет) и плотно ее закрыть.</value>
+  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
