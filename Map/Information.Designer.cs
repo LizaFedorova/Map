@@ -52,6 +52,7 @@ namespace Map
             // splitter1
             // 
             this.splitter1.BackColor = System.Drawing.Color.White;
+            this.splitter1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
             this.splitter1.Size = new System.Drawing.Size(376, 1055);
@@ -88,7 +89,7 @@ namespace Map
             this.buttonTime.BackColor = System.Drawing.Color.YellowGreen;
             this.buttonTime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonTime.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonTime.Location = new System.Drawing.Point(73, 492);
+            this.buttonTime.Location = new System.Drawing.Point(73, 484);
             this.buttonTime.Name = "buttonTime";
             this.buttonTime.Size = new System.Drawing.Size(227, 55);
             this.buttonTime.TabIndex = 13;
