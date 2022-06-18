@@ -35,9 +35,7 @@ namespace Map
             this.buttonMenu = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +68,7 @@ namespace Map
             // 
             this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMenu.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMenu.Location = new System.Drawing.Point(464, 672);
+            this.buttonMenu.Location = new System.Drawing.Point(482, 686);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(227, 49);
             this.buttonMenu.TabIndex = 16;
@@ -81,9 +79,9 @@ namespace Map
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Map.Properties.Resources.ee2131f3ca3be41f419c85cf2a61fea3;
-            this.pictureBox2.Location = new System.Drawing.Point(464, 708);
+            this.pictureBox2.Location = new System.Drawing.Point(473, 720);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(227, 82);
+            this.pictureBox2.Size = new System.Drawing.Size(248, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -92,27 +90,15 @@ namespace Map
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.textBox1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(12, 212);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(573, 377);
+            this.textBox1.Size = new System.Drawing.Size(573, 402);
             this.textBox1.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Franklin Gothic Book", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.OliveDrab;
-            this.textBox2.Location = new System.Drawing.Point(12, 614);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(367, 94);
-            this.textBox2.TabIndex = 22;
-            this.textBox2.Text = "Передвижные пункты утилизации отходов. Когда и где они будут находиться?";
-            this.textBox2.Visible = false;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // textBox3
             // 
@@ -124,22 +110,9 @@ namespace Map
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(567, 377);
+            this.textBox3.Size = new System.Drawing.Size(567, 402);
             this.textBox3.TabIndex = 23;
             this.textBox3.Text = resources.GetString("textBox3.Text");
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox4.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.textBox4.Location = new System.Drawing.Point(791, 666);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(367, 377);
-            this.textBox4.TabIndex = 24;
-            this.textBox4.Visible = false;
             // 
             // textBox5
             // 
@@ -147,7 +120,7 @@ namespace Map
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Franklin Gothic Book", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.ForeColor = System.Drawing.Color.OliveDrab;
-            this.textBox5.Location = new System.Drawing.Point(310, 105);
+            this.textBox5.Location = new System.Drawing.Point(310, 115);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(562, 65);
@@ -158,8 +131,9 @@ namespace Map
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.YellowGreen;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(187, 514);
+            this.button1.Location = new System.Drawing.Point(185, 526);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(227, 49);
             this.button1.TabIndex = 26;
@@ -175,17 +149,15 @@ namespace Map
             this.ClientSize = new System.Drawing.Size(1182, 1055);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonMenu);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "News";
-            this.Text = "News";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.News_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -200,9 +172,7 @@ namespace Map
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button1;
     }

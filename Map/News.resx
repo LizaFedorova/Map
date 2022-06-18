@@ -117,9 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="buttonMenu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Отходы можно принести в пункты по следующим адресам:
+  • Бабушкина 16;
+  • Первомайская 75;
+  • Мельковская 7;
+  • Луначарского 217;
+  • Московская 27;
+  • 8-е марта 177.
+
+    Все желающие могут сдать отходы в передвижные пункты приема с 02.06.2022 по 24.06.2022. Более подробно ознакомиться с графиком можно по кнопке ниже.
+</value>
+  </data>
   <data name="textBox3.Text" xml:space="preserve">
     <value>    Жители города могут бесплатно сдать в передвижные пункты приема следующие виды отходов:
   • ртутные лампы (люминесцентные и компактные энергосберегающие);
